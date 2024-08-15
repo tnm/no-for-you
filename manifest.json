@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Twitter For You Tab Remover",
+    "version": "1.1",
+    "description": "Removes the 'For You' tab from Twitter",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+        {
+        "matches": ["https://twitter.com/*", "https://x.com/*"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+        }
+    ]
+}
